@@ -2,28 +2,43 @@
 
 from motools import Vector
 
-vec1 = Vector([1,2,3])
-vec2 = Vector([1,2,3])
-vec3 = Vector([3,2,1])
+vector2a = Vector([4, 5])
+vector2b = Vector([7, 9])
+vector2c = Vector([4, 5])
+scalar2 = 6.78
+
+vector3a = Vector([6, 3, 5])
+vector3b = Vector([3, 1, 2])
+vector3c = Vector([6, 3, 5])
+scalar3 = 7.41
 
 print('Vector Addition')
-vec1 = Vector([8.218,-9.341])
-vec2 = Vector([-1.129,2.111])
-new_vec = vec1 + vec2
-print('{} + {}'.format(vec1, vec2))
-print('New Vector: {}'.format(new_vec))
+add2vector = vector2a + vector2b
+print('{} + {} = {}'.format(vector2a, vector2b, add2vector))
+add3vector = vector3a + vector3b
+print('{} + {} = {}'.format(vector3a, vector3b, add3vector))
 
 print('Vector Subtraction')
-vec1 = Vector([7.119,8.215])
-vec2 = Vector([-8.223,0.878])
-new_vec = vec1 - vec2
-print('{} - {}'.format(vec1, vec2))
-print('New Vector: {}'.format(new_vec))
+sub2vector = vector2a - vector2b
+print('{} - {} = {}'.format(vector2a, vector2b, sub2vector))
+sub3vector = vector3a - vector3b
+print('{} - {} = {}'.format(vector3a, vector3b, sub3vector))
 
-print('Vector Scalar Multiply')
-vec1 = Vector([1.671,-1.012,-0.318])
-scalar = 7.41
-new_vec = vec1.scale(scalar)
-print('{} * {}'.format(scalar, vec1))
-print('New Vector: {}'.format(new_vec))
+print('Vector Scalar Multiplcation')
+scale2vector = vector2c.scalar(scalar2)
+print('{} * {} = {}'.format(scalar2, vector2c, scale2vector))
+scale3vector = vector3c.scalar(scalar3)
+print('{} * {} = {}'.format(scalar3, vector3c, scale3vector))
+
+print('Increment Vector')
+for i in [2, 8]:
+    print('{} + {} = {}'.format(vector2b, i, vector2b.increment(i)))
+for i in [4, 12]:
+    print('{} + {} = {}'.format(vector2b, i, vector2b.increment(i)))
+
+print('Decrement Vector')
+for i in [2, 8]:
+    print('{} + {} = {}'.format(vector2b, i, vector2b.decrement(i)))
+for i in [4, 12]:
+    print('{} + {} = {}'.format(vector2b, i, vector2b.decrement(i)))
 
