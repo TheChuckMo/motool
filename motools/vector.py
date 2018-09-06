@@ -1,5 +1,4 @@
-'''Vector math module
-    based on examples from Udacity course Linear Algebra refresher'''
+'''Vector math module'''
 
 
 class Vector(object):
@@ -20,7 +19,6 @@ class Vector(object):
 
     def __repr__(self):
         return 'Vector({})'.format(list(self.coordinates))
-
 
     def __str__(self):
         return '{}'.format(str(self.coordinates))
