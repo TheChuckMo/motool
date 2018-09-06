@@ -21,7 +21,7 @@ class Vector(object):
         return 'Vector({})'.format(list(self.coordinates))
 
     def __str__(self):
-        return '{}'.format(str(self.coordinates))
+        return '{}'.format(list(self.coordinates))
 
     def __eq__(self, v):
         '''vector equality'''
