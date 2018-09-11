@@ -1,6 +1,6 @@
 #!/bin/env python
 
-from motools import Vector
+from momath import Vector
 
 vector2a = Vector([4, 5])
 vector2b = Vector([7, 9])

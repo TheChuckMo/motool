@@ -2,7 +2,7 @@
 
 import pytest
 
-from motools import Vector
+from momath import Vector
 
 
 @pytest.fixture
