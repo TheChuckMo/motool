@@ -10,7 +10,12 @@ insert_final_newline = true
 [*]
 charset = utf-8
 
-# 4 space indentation
+# python 4 space indentation
 [*.py]
 indent_style = space
 indent_size = 4
+
+# yaml 2 space indentation
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2

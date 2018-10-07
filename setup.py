@@ -1,4 +1,4 @@
-'''py_motools setup.py'''
+"""py_motools setup.py"""
 
 from setuptools import find_packages, setup
 

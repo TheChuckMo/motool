@@ -30,13 +30,13 @@ print(' :{} * {} = {}'.format(scalar2, vector2c, scale2vector))
 scale3vector = vector3c.scalar(scalar3)
 print(' :{} * {} = {}'.format(scalar3, vector3c, scale3vector))
 
-print('Increment Vector by integar')
+print('Increment Vector by integer')
 for i in [2, 8]:
     print(' :{} by {} = {}'.format(vector2b, i, vector2b.increment(i)))
 for i in [4, 12]:
     print(' :{} by {} = {}'.format(vector3b, i, vector3b.increment(i)))
 
-print('Decrement Vector by integar')
+print('Decrement Vector by integer')
 for i in [2, 8]:
     print(' :{} by {} = {}'.format(vector2b, i, vector2b.decrement(i)))
 for i in [4, 12]:

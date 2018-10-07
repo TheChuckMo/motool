@@ -1,4 +1,4 @@
-'''TestVector()'''
+"""TestVector()"""
 
 import pytest
 
