@@ -36,7 +36,7 @@ class Vector(object):
         """vector subtraction"""
         return Vector([x-y for x, y in zip(self.coordinates, v.coordinates)])
 
-    def inner_product(self, v):
+    def dot(self, v):
         """Inner/Dot product"""
         return sum([x*y for x, y in zip(self.coordinates, v.coordinates)])
 
