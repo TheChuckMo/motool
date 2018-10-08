@@ -1,2 +1,7 @@
 pyenv/
 .pytest_cache/
+.idea/
+momath/__init__.pyc
+momath/__pycache__/
+momath/test/__pycache__/
+momath/vector.pyc

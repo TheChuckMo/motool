@@ -1,5 +1,5 @@
 """Vector math module"""
-from math import sqrt, pow
+from math import sqrt, pow, acos
 
 
 class Vector(object):
@@ -36,27 +36,31 @@ class Vector(object):
         """vector subtraction"""
         return Vector([x-y for x, y in zip(self.coordinates, v.coordinates)])
 
-#    def __mul__(self, v):
-#        """vector multiplication"""
-#        return Vector([x*y for x, y in zip(self.coordinates, v.coordinates)])
+    def inner_product(self, v):
+        """Inner/Dot product"""
+        return sum([x*y for x, y in zip(self.coordinates, v.coordinates)])
 
-    def increment(self, n=1):
-        """add integar to each coordinate"""
-        return Vector([x+n for x in self.coordinates])
+    def inner_angle(self, v):
+        """inner angle"""
+        return acos(self.inner_product(v)/(self.magnitude*v.magnitude))
 
-    def decrement(self, n=1):
-        """subtract integar from each coordinate"""
-        return Vector([x-n for x in self.coordinates])
-
-    def scalar(self, n):
-        """multiply each coordinate by integar"""
-        return Vector([x*n for x in self.coordinates])
-
+    @property
     def magnitude(self):
         """size or distance of vector"""
         n = sum([pow(x, 2) for x in self.coordinates])
         return sqrt(n)
 
-    def normalize(self):
-        """normalization"""
-        return self.scalar(1/self.magnitude())
+    @property
+    def normalized(self):
+        """normalized vector"""
+        try:
+            return self.scalar(1/self.magnitude)
+
+        except ZeroDivisionError:
+            raise Exception('Vector is zero')
+
+    def scalar(self, n):
+        """multiply each coordinate by integar"""
+        return Vector([x*n for x in self.coordinates])
+
+
