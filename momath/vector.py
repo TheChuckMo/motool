@@ -1,5 +1,5 @@
 """Vector math module"""
-from math import sqrt, pow, acos
+from math import sqrt, pow, acos, degrees
 
 
 class Vector(object):
@@ -42,7 +42,9 @@ class Vector(object):
 
     def inner_angle(self, v):
         """inner angle"""
-        return acos(self.inner_product(v)/(self.magnitude*v.magnitude))
+        n = acos(self.inner_product(v)/(self.magnitude*v.magnitude))
+        d = degrees(n)
+        return tuple([n, d])
 
     @property
     def magnitude(self):

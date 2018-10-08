@@ -39,4 +39,4 @@ print(' :{} = {}'.format(vector2b, vector2b.normalized))
 print(' :{} = {}'.format(vector3b, vector3b.normalized))
 
 print('Vector/Vector Angle')
-print(' :({},{}) = {}'.format(vector2c, vector3c, vector2c.inner_angle(vector3c)))
+print(' :({},{}) = {}'.format(vector2c, vector2a, vector2c.inner_angle(vector2a)))
