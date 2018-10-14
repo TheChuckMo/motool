@@ -91,35 +91,35 @@ class TestVector(object):
         subvector4 = values.get('vector3a') - values.get('vector3b') - values.get('vector3c')
         assert subvector4 == values.get('subvector4')
 
-    def test_scalar_multiplication(self, values):
-        '''Test vector multiplication'''
+    # def test_scalar_multiplication(self, values):
+    #     '''Test vector multiplication'''
+    #
+    #     mulvector1 = values.get('vector2a') * values.get('vector2b')
+    #     assert mulvector1 == values.get('mulvector1')
+    #
+    #     mulvector2 = values.get('vector2a') * values.get('vector2b') * values.get('vector2c')
+    #     assert mulvector2 == values.get('mulvector2')
+    #
+    #     mulvector3 = values.get('vector3a') * values.get('vector3b')
+    #     assert mulvector3 == values.get('mulvector3')
+    #
+    #     mulvector4 = values.get('vector3a') * values.get('vector3b') * values.get('vector3c')
+    #     assert mulvector4 == values.get('mulvector4')
 
-        mulvector1 = values.get('vector2a') * values.get('vector2b')
-        assert mulvector1 == values.get('mulvector1')
-
-        mulvector2 = values.get('vector2a') * values.get('vector2b') * values.get('vector2c')
-        assert mulvector2 == values.get('mulvector2')
-
-        mulvector3 = values.get('vector3a') * values.get('vector3b')
-        assert mulvector3 == values.get('mulvector3')
-
-        mulvector4 = values.get('vector3a') * values.get('vector3b') * values.get('vector3c')
-        assert mulvector4 == values.get('mulvector4')
-
-    def test_increment(self, values):
-        '''test increment vector by integar'''
-
-        assert values.get('vector2a').increment(2) == values.get('incvector1')
-        assert values.get('vector2a').increment(5) == values.get('incvector2')
-
-        assert values.get('vector3a').increment(2) == values.get('incvector3')
-        assert values.get('vector3a').increment(5) == values.get('incvector4')
-
-    def test_decrement(self, values):
-        '''test decrement vector by integar'''
-
-        assert values.get('vector2a').decrement(2) == values.get('decvector1')
-        assert values.get('vector2a').decrement(5) == values.get('decvector2')
-
-        assert values.get('vector3a').decrement(2) == values.get('decvector3')
-        assert values.get('vector3a').decrement(5) == values.get('decvector4')
+    # def test_increment(self, values):
+    #     '''test increment vector by integar'''
+    #
+    #     assert values.get('vector2a').increment(2) == values.get('incvector1')
+    #     assert values.get('vector2a').increment(5) == values.get('incvector2')
+    #
+    #     assert values.get('vector3a').increment(2) == values.get('incvector3')
+    #     assert values.get('vector3a').increment(5) == values.get('incvector4')
+    #
+    # def test_decrement(self, values):
+    #     '''test decrement vector by integar'''
+    #
+    #     assert values.get('vector2a').decrement(2) == values.get('decvector1')
+    #     assert values.get('vector2a').decrement(5) == values.get('decvector2')
+    #
+    #     assert values.get('vector3a').decrement(2) == values.get('decvector3')
+    #     assert values.get('vector3a').decrement(5) == values.get('decvector4')
