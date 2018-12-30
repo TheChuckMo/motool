@@ -1,1 +1,1 @@
-from momath.vector import Vector
+__version__ = '0.0.1'
