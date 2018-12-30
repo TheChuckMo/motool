@@ -1,0 +1,17 @@
+[metadata]
+name = 'momath'
+version = '0.0.1'
+description = 'Moose Math'
+author = 'Chuck Mo'
+author_email = 'chuck@moosejudge.com'
+license = 'MIT/Apache-2.0'
+url = 'https://gitlab.com/TheChuckMo/momath'
+
+[requires]
+python_version = ['3.5', '3.6', '3.7']
+
+[build-system]
+requires = ['setuptools', 'wheel']
+
+[tool.hatch.commands]
+prerelease = 'hatch build'
